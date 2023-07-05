@@ -197,7 +197,10 @@ export default function Table(data) {
       <div id="">
         <canvas id="chart"></canvas>
       </div>
-      <input type="text" name="daterange" id="range" />
+      <div className = "d-flex flex-column gap-3 my-5 justify-content-center align-items-center">
+        <h3 className="h3">Choose date to display on graph</h3>
+        <input type="text" className="" name="daterange" id="range" />
+      </div>
     </div>
   );
 }

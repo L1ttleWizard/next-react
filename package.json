@@ -10,7 +10,6 @@
     "publish": "git checkout gh-pages && git merge --abort && git reset --hard main && git cherry-pick main && git add . && git commit -m \"Publish changes\" && git push origin gh-pages && git checkout main"
   },
   "dependencies": {
-    "bootstrap": "^5.3.0",
     "chart.js": "^4.3.0",
     "daterangepicker": "^3.1.0",
     "eslint-config-next": "^12.0.4",
@@ -23,6 +22,7 @@
     "sass": "^1.63.6"
   },
   "devDependencies": {
-    "boostrap": "^2.0.0"
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.3.0"
   }
 }

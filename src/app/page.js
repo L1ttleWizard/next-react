@@ -5,6 +5,7 @@ import Table from "@/Components/Table";
 import { useState } from "react";
 import { Measurement } from "@/Components/Measurement";
 import Loading from "./loading";
+import { Header } from "@/Components/Header";
 
 export default function Home() {
 
@@ -22,16 +23,17 @@ export default function Home() {
   });
   return (
     <>
-      <h1>home</h1>
-      <ul>
-        {
+      <Header />
+      <main>
+        <ul>
+          {
           loading ? <Loading /> : <>
-            <Table data={measures} />
-            <Measurement data={measures} />
-          </>
-        }
-
-      </ul>
+              <Table data={measures} />
+              <Measurement data={measures} />
+            </>
+            }
+        </ul>
+      </main>
     </>
 
   )
